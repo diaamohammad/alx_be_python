@@ -5,7 +5,7 @@ current_age = int(input("How old are you? "))
 
 #add his age 
 
-age_in_2050 = current_age + 270 = current_age + 27
+age_in_2050 = current_age + 27
 
 #print his future age
 
