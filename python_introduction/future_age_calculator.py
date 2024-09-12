@@ -1,6 +1,6 @@
 #ask age
 
-age =int(input("how old are you ?\n"))
+age =int(input("How old are you ?"))
 
 #add his age 
 
