@@ -6,11 +6,11 @@ num2 = int (input("Enter the second number:"))
 
 #ask for operation
 
-his_choose = input("choose the operation (+,-,*,/):")
+operation = input("choose the operation (+,-,*,/):")
 
 #check
 
-match his_choose:
+match operation:
     case"+":
         print(f"result is {num1+num2}")
 
