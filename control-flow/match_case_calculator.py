@@ -12,16 +12,16 @@ operation = input("choose the operation (+,-,*,/):")
 
 match operation:
     case"+":
-        print(f"result is {num1+num2}")
+        print(f"The result is {num1+num2}")
 
     case"-":
-        print(f"result is {num1-num2}")
+        print(f"The result is {num1-num2}")
 
     case"*":
-        print(f"result is {num1*num2}")
+        print(f"The result is {num1*num2}")
 
     case"/":
-        print(f"result is {num1/num2}")
+        print(f"The result is {num1/num2}")
 
     case _:
         print("not option")
