@@ -11,16 +11,16 @@ his_choose = input("choose the operation (+,-,*,/):")
 #check
 
 match his_choose:
-    case "+":
+    case"+":
         print(f"result is {num1+num2}")
 
-    case "-":
+    case"-":
         print(f"result is {num1-num2}")
 
-    case "*":
+    case"*":
         print(f"result is {num1*num2}")
 
-    case "/":
+    case"/":
         print(f"result is {num1/num2}")
 
     case _:
