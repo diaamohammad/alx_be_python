@@ -1,27 +1,27 @@
 #prompt for a single task 
 
-task = input("Enter your task:")
+Task = input("Enter your task:")
 
-priority = input("Priority (high/medium/low:")
+Priority = input("Priority (high/medium/low:")
 
-time = input("Is it time-bound? (yes/no):")
+Time = input("Is it time-bound? (yes/no):")
 
 match priority:
 
     case "high":
         
     
-            print(f"Reminder: '{task}' is a {priority} priority task that requires immediate attention today!")
+            print(f"Reminder: '{Task}' is a {Priority} priority task that requires immediate attention today!")
 
 
 
     case "medium":
-           print(f"Reminder: '{task}' is a {priority} priority task.")
+           print(f"Reminder: '{Task}' is a {Priority} priority task.")
 
 
 
     case "low":
-          print(f"Reminder: '{task}' is a {priority} priority task.")
+          print(f"Reminder: '{Task}' is a {Priority} priority task.")
 
           
 
