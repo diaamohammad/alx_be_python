@@ -1,17 +1,17 @@
-# Ask the user for input
-size = int(input("Enter a positive integer for the pattern size: "))
+# طلب الإدخال من المستخدم
+size = int(input("Enter the size of the pattern: "))
 
-# Ensure the size is positive
-while size <= 0:  # Ensure the input is positive
+# التأكد من أن الحجم المدخل موجب
+while size <= 0:
     size = int(input("Please enter a positive integer: "))
 
-# Start drawing the square
-row = 0  # Variable to control the number of rows
+# بدء رسم المربع
+row = 0
 
-# Use a while loop to repeat for the number of rows
+# استخدام حلقة while لتكرار الصفوف
 while row < size:
-    # Use a for loop to print the columns (stars) in the same row
-    for col in range(size):  # col means column
-        print("*", end="")  # end="" prevents moving to the next line
-    print()  # Move to the next line after printing all stars in the row
-    row += 1  # Increment the row count
+    # حلقة for لتكرار الأعمدة وطباعتها في نفس الصف
+    for col in range(size):
+        print("*", end="")
+    print()  # الانتقال إلى سطر جديد بعد الانتهاء من الصف
+    row += 1  # زيادة عدد الصفوف
