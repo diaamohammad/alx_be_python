@@ -1,41 +1,32 @@
-# Script: daily_reminder.py
+Task = input("Enter your task:")
+Priority = input("Priority (high/medium/low): ").lower()
+Time_bound = input("Is it time-bound? (yes/no): ").lower()
 
-# Loop to get valid inputs
-while True:
-    # Get user inputs for task, priority, and time sensitivity
-    task = input("Enter your task: ")
-    priority = input("Priority (high/medium/low): ").lower()
-    time_bound = input("Is it time-bound? (yes/no): ").lower()
+match Priority:
+    case "high":
+        if Time_bound=="yes".lower():
+            print(f"Reminder: '{Task}' is a high priority task that requires immediate attention today!")
 
-    # Validate inputs for priority and time-bound
-    if priority not in ["high", "medium", "low"]:
-        print("Invalid priority. Please enter 'high', 'medium', or 'low'.")
-        continue  # Restart loop if invalid priority is entered
-    
-    if time_bound not in ["yes", "no"]:
-        print("Invalid input for time-bound. Please enter 'yes' or 'no'.")
-        continue  # Restart loop if invalid input for time sensitivity
-    
-    # Process task based on priority using match-case
-    match priority:
-        case "high":
-            priority_message = "a high priority task"
-        case "medium":
-            priority_message = "a medium priority task"
-        case "low":
-            priority_message = "a low priority task"
-    
-    # Add time-bound information using if statement
-    if time_bound == "yes":
-        time_message = "that requires immediate attention today!"
-    else:
-        time_message = ""
-    
-    # Print the customized reminder
-    print(f"Reminder: '{task}' is {priority_message} {time_message}")
-    
-    # Exit the loop after providing a valid reminder
-    break
+        else:
+            print(f"Reminder: '{Task}' is a high priority task, but not time-sensitive.")
 
 
+    case "medium":
+        if Time_bound=="yes".lower():
+            print(f"Reminder: '{Task}' is a medium priority task. Complete it soon as it's time-sensitive.")
+
+        else:
+            print(f"Reminder: '{Task}' is a medium priority task. Do it at your earliest convenience.")
     
+    
+    
+    case "low":
+        if Time_bound=="yes".lower():
+            print(f"Reminder: '{Task}' is a low priority task, but it's time-sensitive. Try to complete it today.")
+        
+        else:
+            print(f"Note: '{Task}' is a low priority task. Consider completing it when you have free time.")
+
+    case _:
+        print("Invalid priority level. Please enter high, medium, or low.")
+        
