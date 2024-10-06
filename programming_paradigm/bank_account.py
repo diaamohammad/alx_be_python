@@ -22,7 +22,7 @@ class BankAccount:
             return True
     def display_balance(self):
 
-        print(f"the current balance is {self.account_balance}")
+        print(f"Current Balance: {self.account_balance}")
 MyAccount=BankAccount()
 MyAccount.deposit()
 MyAccount.withdraw()
