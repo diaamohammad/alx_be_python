@@ -7,14 +7,15 @@ class BankAccount:
         if amount >  0:
             self.account_balance+=amount
 
-            print(f"balance now is {self.account_balance}")
+            print(f" Deposited: ${amount}")
 
         else:
-            print("please enter the money")
+            print("Please enter a valid amount")
 
     def withdraw(self,amount):
 
         if amount > self.account_balance: 
+            print("Insufficient funds.")
             return False
 
         elif amount < self.account_balance:
